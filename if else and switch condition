@@ -1,1 +1,108 @@
+1.voting eligiblity
+
+
+#include<stdio.h>
+void main()
+{
+   int age;
+   printf("Enter your age:");
+   scanf("%d",&age);
+   if(age>=18)
+    {
+        printf("\nEligible to vote");
+    }
+   else
+    {
+        printf("\nNot eligible for vote");
+    }
+
+}
+=============================================================================================================================================
+
+Output
+
+Enter your age:21
+
+Eligible to vote
+
+===========================================================================================================================================
+
+2.BMI category
+
+#include<stdio.h>
+#include<math.h>
+
+void main() 
+{float weight, height,BMI;
+
+printf("Enter your weight in kg : ");
+scanf("%f",&weight);
+printf("\nEnter your height in cm : ");
+scanf("%f",&height);
+
+BMI=weight/(height*height);
+
+printf("\nYour BMI is  : %.2f",BMI);
+if(BMI<18.5)
+{
+    printf("\nCategory : Under weight");
+}
+else if(BMI>18.5 && BMI<24.9)
+{
+    printf("\nCategory : Normal weight");
+}
+else if(BMI>25 && BMI<29.9)
+{
+    printf("\nCategory : Over weight ");
+}
+else if(BMI>=30)
+{
+    printf("\nCategory : Obesity");
+}
+}
+
+===========================================================================================================================================
+
+Output
+
+Enter your weight in kg : 77
+
+Enter your height in m : 1.6
+
+Your BMI is  : 30.08
+Category : Obesity
+
+==========================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
