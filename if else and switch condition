@@ -37,7 +37,7 @@ void main()
 
 printf("Enter your weight in kg : ");
 scanf("%f",&weight);
-printf("\nEnter your height in cm : ");
+printf("\nEnter your height in m : ");
 scanf("%f",&height);
 
 BMI=weight/(height*height);
@@ -74,13 +74,107 @@ Category : Obesity
 
 ==========================================================================================================================================
 
+3.Divisibility
+
+#include<stdio.h>
+void main()
+{
+   int x;
+   printf("Enter the number :");
+   scanf("%d",&x);
+   if((x%5==0)&&(x%11==0))
+   {
+       printf("\nThe given number is divisibility by 5 and 11");
+       
+   }
+   else
+   {
+       printf("\nThe given number is not divisibility by 5 and 11 ");
+   }
+}
+
+=========================================================================================================================================
+
+Output
+
+Enter the number :110
+
+The given number is divisibility by 5 and 11
+
+==========================================================================================================================================
+
+4.Arithmetic operation
+
+#include<stdio.h>
+void main()
+{
+  int a,b,num;
+  printf("Enter number1:");
+  scanf("%d",&a);
+  printf("\nEnter number2:");
+  scanf("%d",&b);
+  printf("\nchoose any option\n1.addition\n2.subraction\n3.multiplication\n4.division\n");
+  scanf("%d",&num);
+  switch(num)
+  {
+    case 1:
+        printf("The addition of two numbers \n%d",a+b);
+        break;
+    case 2:
+        printf("Subrection of two numbers \n%d",a-b);
+        break;
+    case 3:
+        printf("Multiplaction of two numbers \n%d",a*b);
+        break;
+    case 4:
+        if(b==0)
+        {
+            printf("\ncannot divisible");
+        }
+        else
+        {
+        printf("division of two number \n%d",a/b);
+        }
+        break;
+    
+  }
+    
+  }
 
 
+==========================================================================================================================================
 
+Output 1
 
+Enter number1:56
 
+Enter number2:2
 
+choose any option
+1.addition
+2.subraction
+3.multiplication
+4.division
+4
+division of two number 
+28
 
+Output 2
+
+Enter number1:5
+
+Enter number2:0
+
+choose any option
+1.addition
+2.subraction
+3.multiplication
+4.division
+4
+
+cannot divisible
+
+===========================================================================================================================================
 
 
 
